@@ -130,6 +130,33 @@ section#inicio {
     background-color: rgb(211, 231, 211);
 }
 
+.cv-item {
+    margin-top: -2px;
+    border-left: 2px solid rgb(41, 121, 41);
+    position: relative;
+    padding: 0 0 20px 20px;
+}
+
+.cv-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 19px;
+    height: 19px;
+    border: 2px solid rgb(41, 121, 41);
+    border-radius: 50%;
+    background:rgb(41, 121, 41);
+}
+
+
+.title-cv {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(41, 121, 41);
+}
+
 /* Responsive */
 
 @media (max-width: 1024px) {
