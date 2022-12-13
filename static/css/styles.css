@@ -126,6 +126,10 @@ section#inicio {
 }
 
 
+.section-bg {
+    background-color: rgb(211, 231, 211);
+}
+
 /* Responsive */
 
 @media (max-width: 1024px) {
