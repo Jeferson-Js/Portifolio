@@ -111,6 +111,20 @@ section#inicio {
    left: 0;
 }
 
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    background-color: #fff;
+    box-shadow: #333;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 121, 41);
+}
+
 
 /* Responsive */
 

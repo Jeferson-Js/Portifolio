@@ -1,79 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-    <ion-icon name="menu" class="menu" onclick="toggleMenu(this)"></ion-icon>
-    <aside id="header">
-        <section>
-        <img src="../static/img/eu.jpeg" alt="Jeferson Santos Oliveira" class="logo">
-        <h3 class="text-success">Oliveira.js</h3>
-        <div class="mt-4 text-center text-white">
-            <a class="text-white text-decoration-none" href="https://github.com/Jeferson-Js" target="_blank">
-                <i class="bi bi-github m-2"></i>
-            </a>
-            <a class="text-white text-decoration-none" href="https://www.linkedin.com/in/jeferson-santos-oliveira/" target="_blank">
-                <i class="bi bi-linkedin m-2"></i>
-            </a>
-        </div>
-        <header>
-            <nav>
-                <ul class="mb-3">
-                    <li class="mb-3"><a class="text-white text-decoration-none" href="#inicio"><i class="bi bi-house m-2 text-success"></i>Inicio</a></li>
-                    <li class="mb-3"><a class="text-white text-decoration-none" href="#sobre"><i class="bi bi-file-earmark-person m-2 text-success" ></i> Sobre</a></li>
-                    <li class="mb-3"><a class="text-white text-decoration-none" href="#habilidades"><i class="bi bi-list-check m-2 text-success"></i> Habilidades</a></li>
-                    <li class="mb-3"><a class="text-white text-decoration-none" href="#curriculo"><i class="bi bi-file-earmark-code m-2 text-success"></i>Curriculo</a></li>
-                    <li class="mb-3"><a class="text-white text-decoration-none" href="#portifolio"><i class="bi bi-collection m-2 text-success"></i>Portifólio</a></li>
-                    <li class="mb-3"><a class="text-white text-decoration-none" href="#contato"><i class="bi bi-person-lines-fill m-2 text-success"></i>Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-    </aside>
-    <main>
-        <section id="inicio" class="row">
-            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column ">
-                <h2 class="text-shadow" class="text-white pt-5">Jeferson Santos Oliveira</h2>
-                <span class="text-shadow subtitle" class="text-white">Programador Full Stack</span>
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portifolio</title>
+        <link rel="stylesheet" href="../static/css/styles.css" />
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <ion-icon
+            name="menu"
+            class="menu text-bg-success"
+            onclick="toggleMenu(this)"></ion-icon>
+        <aside id="header">
+            <section>
+                <img
+                    src="../static/img/eu.jpeg"
+                    alt="Jeferson Santos Oliveira"
+                    class="logo" />
+                <h3 class="text-success">Oliveira.js</h3>
+                <div class="mt-4 text-center text-white">
+                    <a
+                        class="text-white text-decoration-none"
+                        href="https://github.com/Jeferson-Js"
+                        target="_blank">
+                        <i class="bi bi-github m-2"></i>
+                    </a>
+                    <a
+                        class="text-white text-decoration-none"
+                        href="https://www.linkedin.com/in/jeferson-santos-oliveira/"
+                        target="_blank">
+                        <i class="bi bi-linkedin m-2"></i>
+                    </a>
+                </div>
+                <header>
+                    <nav>
+                        <ul class="mb-3">
+                            <li class="mb-3">
+                                <a
+                                    class="text-white text-decoration-none"
+                                    href="#inicio"
+                                    ><i class="bi bi-house m-2 text-success"></i
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="mb-3">
+                                <a
+                                    class="text-white text-decoration-none"
+                                    href="#sobre"
+                                    ><i
+                                        class="bi bi-file-earmark-person m-2 text-success"></i>
+                                    Sobre</a
+                                >
+                            </li>
+                            <li class="mb-3">
+                                <a
+                                    class="text-white text-decoration-none"
+                                    href="#habilidades"
+                                    ><i
+                                        class="bi bi-list-check m-2 text-success"></i>
+                                    Habilidades</a
+                                >
+                            </li>
+                            <li class="mb-3">
+                                <a
+                                    class="text-white text-decoration-none"
+                                    href="#curriculo"
+                                    ><i
+                                        class="bi bi-file-earmark-code m-2 text-success"></i
+                                    >Curriculo</a
+                                >
+                            </li>
+                            <li class="mb-3">
+                                <a
+                                    class="text-white text-decoration-none"
+                                    href="#portifolio"
+                                    ><i
+                                        class="bi bi-collection m-2 text-success"></i
+                                    >Portifólio</a
+                                >
+                            </li>
+                            <li class="mb-3">
+                                <a
+                                    class="text-white text-decoration-none"
+                                    href="#contato"
+                                    ><i
+                                        class="bi bi-person-lines-fill m-2 text-success"></i
+                                    >Contato</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
             </section>
-        <section id="sobre">
-            <h1>Sobre</h1>
-            
-        </section>
-        <section id="habilidades">
-            <h1>Habilidades</h1>
+        </aside>
+        <main>
+            <section id="inicio" class="row">
+                <div
+                    class="col-md-5 d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="text-shadow text-white pt-5">
+                        Jeferson Santos Oliveira
+                    </h2>
+                    <span class="subtitle text-dark"
+                        >Programador Full Stack</span
+                    >
+                </div>
+            </section>
+            <section class="container mt-5" id="sobre">
+                <div class="row w-100">
+                    <div class="col-md-12">
+                        <h2 class="pt-3 text-center text-success">Sobre</h2>
+                        <p class="text-center">
+                            Meu nome é Jeferson Santos Oliveira sou um
+                            programador front-end e por gostar tanto da
+                            linguagem JavaScript acabei adotando a extensão "JS"
+                            em meu nome Oliveira.js e estou em contato com a
+                            tecnologia a 6 anos antenado e apaixonado pelo mundo
+                            da tecnologia, estou sempre me aprofundando em todas
+                            as ferramentas e tecnologias no qual estou em
+                            contato, busco também conhecimentos avançados na
+                            área de desenvolvimento pessoal para que o
+                            relacionamento com as pessoas da empresa e do time
+                            tenha a sua conexão profissional. Minha busca por
+                            desafios maiores me deram a oportunidade de
+                            trabalhar em projetos do Google como programador.
+                            Cursando comercio exterior na Uninove. Tenho
+                            tecnólogo em tecnologia da informação pela
+                            instituição Polly centro de tecnologia da
+                            informação. Desenvolvimento pessoal: instituição
+                            Pandora treinamentos.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img
+                            class="img-fluid shadow rounded"
+                            src="../static/img/eu.jpeg"
+                            alt="Jeferson Santos Oliveira" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="text-success fs-2 text-start mb-2">Desenvolvedor Fullstack</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sit, iste illum. Autem impedit illum, debitis
+                            exercitationem, quo reprehenderit placeat sequi fuga
+                            similique magni sit veniam?
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush fs-6">
+                                    <li class="list-group-item">
+                                        Niver:
+                                        <span class="fw-lighter"
+                                            >29 Novembro 1992</span
+                                        >
+                                    </li>
+                                    <li class="list-group-item">
+                                        Idade:
+                                        <span class="fw-lighter">30 anos</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Cidade
+                                        <span class="fw-lighter"
+                                            >São Paulo</span
+                                        >
+                                    </li>
+                                    <li class="list-group-item"></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush fs-6">
+                                    <li class="list-group-item">
+                                        Hobby:
+                                        <span class="fw-lighter"
+                                            >Poliglota</span
+                                        >
+                                    </li>
+                                    <li class="list-group-item">
+                                        Cargo:
+                                        <span class="fw-lighter"
+                                            >Fullstack</span
+                                        >
+                                    </li>
+                                    <li class="list-group-item">
+                                        Experiência:
+                                        <span class="fw-lighter">
+                                            + 2 anos</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="habilidades">
+                <h2 class="text-center text-success mt-4">Habilidades</h2>
+            </section>
+            <section id="curriculo">
+                <h2 class="text-center text-success mt-4">Curriculo</h2>
+            </section>
+            <section id="portifolio">
+                <h2 class="text-center text-success mt-4">Portifólio</h2>
+            </section>
+            <section id="contato">
+                <h2 class="text-center text-success mt-4">Contato</h2>
+            </section>
+        </main>
 
-        </section>
-        <section id="curriculo">
-            <h1>Curriculo</h1>
-        </section>
-        <section id="portifolio">
-            <h1>Portifolio</h1>
-
-        </section>
-        <section id="contato">
-            <h1>Contato</h1>
-
-        </section>
-    </main>
-
-
-
-
-
-
-
-    <script src="../static/scripts/scripts.js"></script>
-    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="../static/scripts/scripts.js"></script>
+        <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
