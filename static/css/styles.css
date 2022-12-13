@@ -46,9 +46,8 @@ header {
 
 nav {
     display: block;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    position: fixed;
     color: #fff;
     padding: 2rem;
     left: 0;
@@ -86,4 +85,56 @@ section#inicio {
 .subtitle {
     font-size: 1.8rem;
     margin-left: 2rem;
+}
+
+.menu {
+    position: fixed;
+    color: #fff;
+    font-size: 1.1rem;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header, nav {
+   left: 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+
+    aside {
+        left: -300px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        color: #fff;
+    }
+    .subtitle {
+        margin-left: 0;
+        font-size: 1rem;
+        color: #fff;
+        padding-top: 20rem;
+    }
+    main {
+        margin-left: 0;
+    }
 }
