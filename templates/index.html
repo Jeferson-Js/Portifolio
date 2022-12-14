@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portifolio</title>
+        <title>Oliveira.js</title>
         <link rel="stylesheet" href="../static/css/styles.css" />
         <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
         <link
@@ -111,7 +111,7 @@
                     <h2 class="text-shadow text-white pt-5">
                         Jeferson Santos Oliveira
                     </h2>
-                    <span class="subtitle text-dark"
+                    <span class="subtitle text-white"
                         >Programador Full Stack</span
                     >
                 </div>
@@ -433,18 +433,18 @@
                             </div>
                             <div class="col-md-6 mt-5 mt-md-0">
                                 <div class="card shadow p-4 h-100 border-0">
-                                    <form class="row g-3">
+                                    <form action="/send" method="POST" class="row g-3">
                                         <div class="col-md-6">
                                           <label for="nome" class="form-label text-success">Nome</label>
-                                          <input type="name" class="form-control" placeholder="Digite o seu nome" id="nome">
+                                          <input type="name" class="form-control" name="nome" placeholder="Digite o seu nome" id="nome">
                                         </div>
                                         <div class="col-md-6">
                                           <label for="email" class="form-label text-success">Email</label>
-                                          <input type="email" class="form-control" placeholder="Digite o seu email" id="email">
+                                          <input type="email" class="form-control" name="email" placeholder="Digite o seu email" id="email">
                                         </div>
                                         <div class="col-12">
                                           <label for="mensagem" class="form-label text-success">Mensagem</label>
-                                          <textarea type="text" class="form-control" placeholder="Digite a sua mensagem" id="mensagem" rows="10"></textarea>
+                                          <textarea type="text" class="form-control" name="mensagem" placeholder="Digite a sua mensagem" id="mensagem" rows="10"></textarea>
                                         </div>
                                         
                                         <div class="col-12">
