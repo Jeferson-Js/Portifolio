@@ -157,6 +157,19 @@ section#inicio {
     color:rgb(41, 121, 41);
 }
 
+
+.carousel-control-prev {
+    margin-left: 10rem;
+}
+
+.carousel-control-next {
+    margin-right: -50px;
+}
+
+.carousel-indicators {
+    margin-bottom: -45px;
+}
+
 /* Responsive */
 
 @media (max-width: 1024px) {
