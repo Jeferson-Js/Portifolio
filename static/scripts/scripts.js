@@ -16,3 +16,12 @@ navItem.forEach((item) => {
         }
     });
 });
+
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviandoMensagem = document.querySelector('#enviando-mensagem')
+
+btnEnviar.addEventListener('click', () => {
+    btnEnviar.style.display = 'none';
+    btnEnviandoMensagem.style.display = 'block';
+})

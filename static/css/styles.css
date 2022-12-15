@@ -170,6 +170,33 @@ section#inicio {
     margin-bottom: -45px;
 }
 
+#enviando-mensagem {
+    display: none;
+}
+
+#footer {
+    padding: 15px;
+    position: fixed;
+    background-color: #333;
+    color:#fff;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all .4s linear;
+    z-index: 9999;
+}
+
+@media (max-width: 1012px) {
+    #footer {
+        width: auto;
+        position: static;
+        padding: 20px 14px;
+
+    }
+}
+
+
+
 /* Responsive */
 
 @media (max-width: 1024px) {
